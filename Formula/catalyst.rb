@@ -5,21 +5,21 @@
 class Catalyst < Formula
   desc "CLI tool for controlling Nature Remo devices"
   homepage "https://github.com/Eagle-Konbu/catalyst"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Eagle-Konbu/catalyst/releases/download/v0.1.0/catalyst_0.1.0_darwin_amd64.tar.gz"
-      sha256 "0901a453b7af5abd4f998ed01fc757cfe24a7e78bf91d5eb796cf5d07dec3ae2"
+      url "https://github.com/Eagle-Konbu/catalyst/releases/download/v0.1.1/catalyst_0.1.1_darwin_amd64.tar.gz"
+      sha256 "938638c0d64e5f94b9333c3dd5942a250fe108c47a0e21284a9a875872c99247"
 
       def install
         bin.install "catalyst"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Eagle-Konbu/catalyst/releases/download/v0.1.0/catalyst_0.1.0_darwin_arm64.tar.gz"
-      sha256 "7b8c900a9d49b80db6c9ecf6ab2fd1674b7302d6ba096e850c657ac2f9e2ec97"
+      url "https://github.com/Eagle-Konbu/catalyst/releases/download/v0.1.1/catalyst_0.1.1_darwin_arm64.tar.gz"
+      sha256 "99d60a901f35d03a307ed0fe4eb12d776ea8027fcad7117cca52aa49445b1e39"
 
       def install
         bin.install "catalyst"
@@ -29,15 +29,15 @@ class Catalyst < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Eagle-Konbu/catalyst/releases/download/v0.1.0/catalyst_0.1.0_linux_amd64.tar.gz"
-      sha256 "71155e04b817b178b6f2e060ce128b32eaa885ee14d3a2a5b463ab4ad778c6a8"
+      url "https://github.com/Eagle-Konbu/catalyst/releases/download/v0.1.1/catalyst_0.1.1_linux_amd64.tar.gz"
+      sha256 "d2457f06f8e95275c109e132a93c54c245204fa46342da74a2d0d41bdfb4b60e"
       def install
         bin.install "catalyst"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Eagle-Konbu/catalyst/releases/download/v0.1.0/catalyst_0.1.0_linux_arm64.tar.gz"
-      sha256 "d2f54d1cdefe1c1a5364d426d9876564af5ef491113f079c249c550d386abc6d"
+      url "https://github.com/Eagle-Konbu/catalyst/releases/download/v0.1.1/catalyst_0.1.1_linux_arm64.tar.gz"
+      sha256 "53968319873cae8d4f293f1c209e433f6184ac3962f1f883ad688d12ad9fcec3"
       def install
         bin.install "catalyst"
       end
@@ -45,6 +45,6 @@ class Catalyst < Formula
   end
 
   test do
-    system "#{bin}/catalyst", "--help"T
+    system "#{bin}/catalyst", "--help"
   end
 end
