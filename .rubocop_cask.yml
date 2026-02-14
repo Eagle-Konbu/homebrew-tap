@@ -1,0 +1,5 @@
+Cask/StanzaOrder:
+  Enabled: false
+
+Cask/StanzaGrouping:
+  Enabled: false
