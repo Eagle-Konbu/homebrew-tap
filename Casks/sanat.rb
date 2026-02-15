@@ -3,7 +3,7 @@ cask "sanat" do
   name "sanat"
   desc "Yet another CLI tool that automatically formats embedded SQL literals in Go source files"
   homepage "https://github.com/Eagle-Konbu/sanat"
-  version "0.1.0"
+  version "0.1.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,22 +17,22 @@ cask "sanat" do
   on_macos do
     on_intel do
       url "https://github.com/Eagle-Konbu/sanat/releases/download/v#{version}/sanat_#{version}_darwin_amd64.tar.gz"
-      sha256 "754bc5bd8aec2f03b429c7d2204531a1ff2e4ff06960bce36f56123318904466"
+      sha256 "2c120142a038c21ec825c1b2a7f7d023157cf8b59e707fa06b3bd1aa4c99d518"
     end
     on_arm do
       url "https://github.com/Eagle-Konbu/sanat/releases/download/v#{version}/sanat_#{version}_darwin_arm64.tar.gz"
-      sha256 "a4dc916089ed7847d6cd107ae8d0b00d64c7e24310c78b74d30de308b442b7a6"
+      sha256 "1e3789f8dc25e3960dc8630f1a8c5032659d781410c78faab3d522b01093385d"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/Eagle-Konbu/sanat/releases/download/v#{version}/sanat_#{version}_linux_amd64.tar.gz"
-      sha256 "151b2d51c882c17af3983585056f8306904b844f631f0e1faea0303647b23356"
+      sha256 "433064dfff0cc526fa7891c0278c650a848f1df4165fe740c26b8770e62cf70e"
     end
     on_arm do
       url "https://github.com/Eagle-Konbu/sanat/releases/download/v#{version}/sanat_#{version}_linux_arm64.tar.gz"
-      sha256 "89fbe753f91e2f31342f856617559752782b0c08346002069fe3618d6d6283cf"
+      sha256 "d3421bdd89f7b782ca2ac10eec8154cf491726a38c3e78e2623497bca7e74978"
     end
   end
 
